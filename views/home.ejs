@@ -1,0 +1,19 @@
+<html>
+<body>
+<h1>User List</h1>
+<table>
+    <tr>
+        <th><a href="/login">Login</a></th>
+        <% if (is_login) { %>
+            <th><a href="/edit">Edit</a></th>
+            <th><a href="/logout">Logout</a></th>
+        <% } %>
+    </tr>
+</table>
+<ul>
+<% for (let i = 0; i != userList.length; ++i) { %>
+    <li> <a href="/user/<%= userList[i].username %>"> <%= userList[i].username %> </a> </li>
+<% } %>
+</ul>
+</body>
+</html>

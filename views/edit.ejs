@@ -1,0 +1,13 @@
+
+<html>
+<body>
+    <h1><%= currentUser.displayName %></h1>
+    <form method="post">
+    Name:<br>
+    <input type="text" name="name" placeholder="<%= currentUser.displayName %>">
+    Bio:<br>
+    <input type="text" name="bio" placeholder="<%= currentUser.bio %>">
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
